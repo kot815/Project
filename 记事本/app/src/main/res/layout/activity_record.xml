@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity">
+
+
+
+    <TextView
+        android:id="@+id/note_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="记事记录"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="#fb7a6a"
+        android:gravity="center"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/note_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/note_name"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="#fb7a6a"
+        >
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/bt_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="7dp"
+        >
+
+    </ImageView>
+    <ImageView
+        android:id="@+id/bt_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        >
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你要记录的事情"
+        android:layout_below="@+id/note_time"
+        android:textColor="@color/black"
+
+        android:background="#fefefe">
+
+    </EditText>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#7b6a6a"
+        android:layout_above="@+id/bt_delete">
+
+    </View>
+    <ImageView
+        android:id="@+id/bt_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/save_note"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+        >
+
+    </ImageView>
+
+
+</RelativeLayout>
